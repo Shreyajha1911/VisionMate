@@ -1,12 +1,12 @@
 VisionMate — IoT-Based Smart Assistive Mobility Stick
-An IoT-powered smart blind stick that goes beyond what a traditional white cane can do — detecting obstacles, wet surfaces, smoke, and tracking the user's location in real time. Built as a final year B.Tech project in Electronics & Communication Engineering.
+An IoT-powered smart blind stick that goes beyond what a traditional blindstick can do; detecting obstacles, wet surfaces, smoke, and tracking the user's location in real time. Built as a final year project B.Tech project in Electronics & Communication Engineering.
 
 The problem
 Traditional white canes rely solely on physical contact with obstacles. They can't detect hazards in advance, assess environmental conditions like wet surfaces or smoke, or allow caregivers to locate a user remotely. For the 253 million people worldwide living with visual impairment, this is a daily safety gap.
 VisionMate was built to close it.
 
 What it does
-FeatureSensor/ModuleHow it worksObstacle detectionHC-SR04 Ultrasonic SensorDetects objects in the path and triggers buzzer + mobile app alertWet surface warning12V Moisture Sensor + RelayWarns user before stepping on slippery groundSmoke/gas detectionMQ6 Gas SensorAlerts user to presence of smoke or hazardous gasesReal-time GPS trackinguBlox Neo-M8N GPS ModuleStreams live location to ThingSpeak — accessible by caregivers remotelyAudio + text feedbackBluetooth + Arduino BT Text-to-Voice appConverts alerts into spoken audio on the user's phoneData visualisationThingSpeak IoT PlatformLogs all sensor readings — obstacle, moisture, smoke, GPS — to a cloud dashboard
+FeatureSensor/ModuleHow it worksObstacle detectionHC-SR04 Ultrasonic SensorDetects objects in the path and triggers buzzer + mobile app alertWet surface warning12V Moisture Sensor + RelayWarns user before stepping on slippery groundSmoke/gas detectionMQ6 Gas SensorAlerts user to presence of smoke or hazardous gases Real-time GPS trackinguBlox Neo-M8N GPS ModuleStreams live location to ThingSpeak — accessible by caregivers remotelyAudio + text feedbackBluetooth + Arduino BT Text-to-Voice appConverts alerts into spoken audio on the user's phoneData visualisationThingSpeak IoT PlatformLogs all sensor readings — obstacle, moisture, smoke and GPS to a cloud dashboard
 
 ## System architecture
 
@@ -39,13 +39,13 @@ Rechargeable Battery — portable power supply
 ## Results
 All four detection systems were tested and verified:
 
---> Obstacle detection — ultrasonic sensor triggered buzzer and mobile app alert accurately at tested distances
---> Water detection — moisture sensor correctly identified wet surfaces and activated relay
---> Smoke detection — MQ6 sensor flagged gas presence with ThingSpeak logging confirmed
---> GPS tracking — live location streamed to ThingSpeak successfully, accessible remotely by caregiver
+## Obstacle detection — > ultrasonic sensor triggered buzzer and mobile app alert accurately at tested distances
+## Water detection — > moisture sensor correctly identified wet surfaces and activated relay
+## Smoke detection — > MQ6 sensor flagged gas presence with ThingSpeak logging confirmed
+## GPS tracking — > live location streamed to ThingSpeak successfully, accessible remotely by caregiver
 
 
-##Tech stack
+## Tech stack
 ESP32; Arduino; HC-SR04; MQ6; uBlox Neo-M8N; GPS; ThingSpeak; Bluetooth; L298N; C++; IoT
 
 ## Repository structure
