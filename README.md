@@ -44,19 +44,6 @@ All four detection systems were tested and verified:
 ## Smoke detection — > MQ6 sensor flagged gas presence with ThingSpeak logging confirmed
 ## GPS tracking — > live location streamed to ThingSpeak successfully, accessible remotely by caregiver
 
-## Hardware & Results
-
-## Hardware & Results
-
-![VisionMate Device](images/device_photo.png)
-*The assembled VisionMate stick with all sensors mounted*
-
-![Mobile App Alert](images/mobile_app.png)
-*Real-time obstacle alert on the Bluetooth mobile app — "⚠ Obstacle: 9 cm"*
-
-![ThingSpeak Dashboard](images/thingspeak_dashboard.png)
-*Live sensor data streaming to ThingSpeak cloud platform*
-
 
 ## Tech stack
 ESP32; Arduino; HC-SR04; MQ6; uBlox Neo-M8N; GPS; ThingSpeak; Bluetooth; L298N; C++; IoT
