@@ -46,13 +46,15 @@ All four detection systems were tested and verified:
 
 ## Hardware & Results
 
-![VisionMate Device](images/Prototype)
+## Hardware & Results
+
+![VisionMate Device](images/device_photo.png)
 *The assembled VisionMate stick with all sensors mounted*
 
-![Mobile App Alert](images/mobile_app)
+![Mobile App Alert](images/mobile_app.png)
 *Real-time obstacle alert on the Bluetooth mobile app — "⚠ Obstacle: 9 cm"*
 
-![ThingSpeak Dashboard](images/Dashboard_example)
+![ThingSpeak Dashboard](images/thingspeak_dashboard.png)
 *Live sensor data streaming to ThingSpeak cloud platform*
 
 
