@@ -8,15 +8,21 @@ VisionMate was built to close it.
 What it does
 FeatureSensor/ModuleHow it worksObstacle detectionHC-SR04 Ultrasonic SensorDetects objects in the path and triggers buzzer + mobile app alertWet surface warning12V Moisture Sensor + RelayWarns user before stepping on slippery groundSmoke/gas detectionMQ6 Gas SensorAlerts user to presence of smoke or hazardous gasesReal-time GPS trackinguBlox Neo-M8N GPS ModuleStreams live location to ThingSpeak — accessible by caregivers remotelyAudio + text feedbackBluetooth + Arduino BT Text-to-Voice appConverts alerts into spoken audio on the user's phoneData visualisationThingSpeak IoT PlatformLogs all sensor readings — obstacle, moisture, smoke, GPS — to a cloud dashboard
 
-System architecture
-Sensors (Ultrasonic, Moisture, Gas, GPS)
-        │
-        ▼
-ESP32 Microcontroller (real-time processing)
-        │
-        ├──► Piezoelectric Buzzer (immediate local alert)
-        ├──► Bluetooth → Mobile App (audio + text feedback)
-        └──► WiFi → ThingSpeak (cloud logging + GPS tracking)
+## System architecture
+
+**Input — Sensors**
+- HC-SR04 Ultrasonic Sensor
+- Moisture Sensor
+- MQ6 Gas Sensor
+- uBlox Neo-M8N GPS Module
+
+**Processing**
+- ESP32 Microcontroller — receives all sensor data and handles real-time decisions
+
+**Output — Alerts & Logging**
+- Piezoelectric Buzzer — immediate local alert
+- Bluetooth → Mobile App — audio and text feedback to user's phone
+- WiFi → ThingSpeak — cloud logging of all sensor readings + live GPS tracking
 
 ## Hardware components
 
