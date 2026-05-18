@@ -6,7 +6,7 @@ Traditional white canes rely solely on physical contact with obstacles. They can
 VisionMate was built to close it.
 
 ## What it does
-FeatureSensor/ModuleHow it worksObstacle detectionHC-SR04 Ultrasonic SensorDetects objects in the path and triggers buzzer + mobile app alertWet surface warning12V Moisture Sensor + RelayWarns user before stepping on slippery groundSmoke/gas detectionMQ6 Gas SensorAlerts user to presence of smoke or hazardous gases Real-time GPS trackinguBlox Neo-M8N GPS ModuleStreams live location to ThingSpeak — accessible by caregivers remotelyAudio + text feedbackBluetooth + Arduino BT Text-to-Voice appConverts alerts into spoken audio on the user's phoneData visualisationThingSpeak IoT PlatformLogs all sensor readings — obstacle, moisture, smoke and GPS to a cloud dashboard
+The stick runs four detection systems at once — ultrasonic sensors scan the path ahead and trigger a buzzer plus a Bluetooth alert on the user's phone if an object is within 50cm, a moisture sensor at the base catches puddles before the user steps on them, an MQ6 gas sensor picks up smoke or hazardous gases above a safe threshold, and a GPS module streams live coordinates to ThingSpeak every 15 seconds so a caregiver can monitor location remotely from any browser. All four run on the same ESP32 simultaneously — we used millis() instead of delay() to keep the system responsive across all sensors without any one blocking the others. Every alert hits both the buzzer and the phone app, which reads it out loud via text-to-voice.
 
 ## System architecture
 
